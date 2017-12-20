@@ -25,6 +25,7 @@ public class EventManager : MonoBehaviour
 					eventManager.Init ();
                 }
             }
+			return eventManager;
         }
     }
 
@@ -59,4 +60,13 @@ public class EventManager : MonoBehaviour
 			thisEvent.RemoveListener (listener);
 		}
 	}
+
+	public static void TritterEvent(string eventName)
+	{
+		UnityEvent thisEvent = null;
+		if(instance.eventDictionary.TryGetValue(eventName, out thisEvent))
+		{
+			thisEvent.Invoke ();
+		}
+	}	
 }
