@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 76906315}
   - component: {fileID: 76906314}
   - component: {fileID: 76906313}
+  - component: {fileID: 76906317}
   m_Layer: 0
   m_Name: Grey Minion
   m_TagString: Untagged
@@ -192,6 +193,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &76906317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76906312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e5e275dda0040b4bba117445cff6fc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 0}
 --- !u!1 &220923006
 GameObject:
   m_ObjectHideFlags: 0
