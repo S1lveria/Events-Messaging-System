@@ -61,7 +61,7 @@ public class EventManager : MonoBehaviour
 		}
 	}
 
-	public static void TritterEvent(string eventName)
+	public static void TriggerEvent(string eventName)
 	{
 		UnityEvent thisEvent = null;
 		if(instance.eventDictionary.TryGetValue(eventName, out thisEvent))
