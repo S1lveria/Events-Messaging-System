@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine;
+using System.Collections;
 
 public class SelfDestruct : MonoBehaviour
 {
 	public GameObject explosion;
+
 	private float shake = 0.2f;
 	private AudioSource audioSource;
 
@@ -43,5 +44,7 @@ public class SelfDestruct : MonoBehaviour
 			startTime += Time.deltaTime;
 			yield return null;
 		}
+		Instantiate (explosion, transform.position, transform.rotation);
+		Destroy (gameObject);
 	}
 }

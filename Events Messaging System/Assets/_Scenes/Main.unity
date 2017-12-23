@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnCount: 10
-  spawnSize: 50
+  spawnSize: 15
   minionOffset: 1
   minion: {fileID: 1796434908121390, guid: ef74782471eec3d41838c4b3faeff254, type: 2}
 --- !u!4 &353274366
